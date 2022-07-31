@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Site 2b</title>
+    <link rel="shortcut icon" href="./fotos/icon-predio.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Horizontal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <nav id="menu-h">
+    <ul>
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="./sobre.html">Sobre</a></li>
+        <li><a href="./alunos.html">Alunos</a></li>
+        <li><a href="./experimento.html">Experimento</a></li>
+        <li><a href='./calcu.html'>Calculadora Energética</a></li>
+        <!-- região para add mais "opções" no menu -->
+    </ul>
+   </nav>
+
+   <!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora da Termodinâmica</title>
+<h1>Calculadora Termodinâmica</h1>
+<style>
+
+    .container{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 400px;
+    margin: auto;
+}
+
+    input{
+    border: none;
+    outline: none;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: black;
+    border-radius: 5px;
+    border-bottom: 2px solid rgb(70, 27, 27);
+    margin: 10px;
+    background-color: #ededf3;
+}
+
+    button{
+    width: calc(100% - 24px);
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 17px;
+    background: rgb(70, 27, 27);
+    border-radius: 5px;
+    margin: 10px;
+    color: white;
+}
+
+    h1{
+    text-align: center;
+    color: rgb(49, 20, 20);
+    font-family: 'Montserrat', sans-serif;
+}
+
+    body{
+        background-color: rgb(211, 178, 178);
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<input type="number" id="x" placeholder="Valor de X">
+<input type="number" id="y" placeholder="Valor de Y">
+<input type="number" id="z" placeholder="Resultado" readonLy>
+<button type="button" onclick="somar()">+</button>
+<button type="button" onclick="subtrair()">-</button>
+<button type="button" onclick="dividir()">/</button>
+
+</div>
+
+<script>
+const somar = function () {
+let x = document.getElementById('x').value
+let y = document.getElementById('y').value
+z = parseFloat(x) + parseFloat(y)
+document.getElementById('z').value = z
+console.log(z)
+}
+const subtrair = function () {
+let x = document.getElementById('x').value
+let y = document.getElementById('y').value
+z = parseInt(x) - parseInt(y)
+document.getElementById('z').value = z
+}
+const dividir = function () {
+let x = document.getElementById('x').value
+let y = document.getElementById('y').value
+z = parseInt(x) / parseInt(y)
+document.getElementById('z').value = z
+}
+</script>
+
+
+   
+</body>
+</html>
